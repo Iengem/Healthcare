@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+.top{
+    display: flex;
+}
+.nav{
+    display: flex;
+    padding-top: 40px;
+    padding-left: 100px;
+    gap: 70px;
+}
+.nav a{
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    color: black;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+.logopic{
+    width: 100px;
+}
+.hero{
+    background-image: url(portrait-successful-young-doctor-with-folder-stethoscope.jpg);
+    background-size: cover;
+    height: 80vh;
+}
+.herohead{
+    position: relative;
+    top: 200px;
+    width: 700px;
+    line-height: 50px;
+}
+.herohead h1{
+    text-align: center;
+    color: lightseagreen;
+    font-size: 35px;
+}
+.herohead a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px 3px cyan;
+    color: white;
+    background-color: green;
+    position: relative;
+    left: 200px;
+    font-weight: 700;
+}
+.herohead p:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+.body{
+    background-color: lightgray;
+    height: 40vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.abovesec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.secs{
+    height: 200px;
+    background-color: lightgray;
+    padding: 25px;
+    box-shadow: 0px 0px 3px 2px gray;
+}
+.secs h2{
+    padding-top:10px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+.secs p{
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.secs a{
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+    background-color: cyan;
+    border-radius: 50px;
+}
+.med{
+    display: flex;
+    flex-direction: column;
+}
