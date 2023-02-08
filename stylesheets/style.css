@@ -4,23 +4,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 body{
     width: 100vw;
     overflow-x: hidden;
 }
 .top{
+    width: 100%;
     display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    padding: 0px 30px;
+    padding-left: 10px;
 }
 .nav{
+    width: 77%;
     display: flex;
+    justify-content: flex-end;
     padding-top: 40px;
     padding-left: 100px;
     gap: 40px;
 }
 .nav p a:hover{
-    background-color: gray;
+    background-color: rgb(27,71,123);
     transition: .7s;
     color: white;
     border-radius: 30px;
@@ -29,6 +39,7 @@ body{
     text-decoration: none;
     font-family: 'Roboto',sans-serif;
     color: black;
+    font-weight: 100;
     padding: 13px;
 }
 .logo{
@@ -38,46 +49,51 @@ body{
 }
 .logo h1{
     font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
+    font-weight: 400;
 }
 .logopic{
     width: 100px;
 }
 .hero{
-    background-image: url(portrait-successful-young-doctor-with-folder-stethoscope.jpg);
+    background-image: url(surgery-1807541.jpg);
     background-size: cover;
-    height: 80vh;
+    height: 83vh;
 }
 .herohead{
-    position: relative;
-    top: 200px;
-    width: 700px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 30px;
     line-height: 50px;
 }
 .herohead h1{
     text-align: center;
-    color: lightseagreen;
+    color: white;
+    font-weight: 200;
+    width: 50vw;
     font-size: 35px;
+    padding-bottom: 25px;
 }
 .herohead a{
     text-decoration: none;
     font-size: 20px;
-    padding: 12px;
+    padding: 15px 20px;
     border-radius: 50px;
-    box-shadow: 0px 0px 5px 3px cyan;
     color: white;
-    background-color: green;
-    position: relative;
-    left: 200px;
-    font-weight: 700;
+    background-color: rgb(27,71,123);
+    font-weight: 200;
 }
 .herohead p:hover{
     transform: scale(1.05);
     transition: .5s;
 }
 .body{
-    background-color: lightgray;
-    height: 40vh;
+    height: max-content;
+    padding: 30px 0;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -89,28 +105,43 @@ body{
     gap: 30px;
 }
 .secs{
-    height: 200px;
-    background-color: lightgray;
-    padding: 25px;
-    box-shadow: 0px 0px 3px 2px gray;
+    height: 432px;
+    box-shadow: 0px 0px 5px whitesmoke;
+    border-radius: 10px;
+}
+.secs:hover{
+    transform: scale(1.02);
+    transition: .5s;
+}
+.secs img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
 }
 .secs h2{
-    padding-top:10px;
+    padding-left:10px;
     margin-bottom: 40px;
     font-weight: 700;
+    color: rgb(27, 71, 123);
+    padding-left: 20px;
+    padding-top: 20px;
     font-family: 'Roboto', sans-serif;
 }
 .secs p{
+    color: rgb(85, 85, 85);
+    padding-left: 20px;
     font-weight: 700;
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
 }
 .secs a{
     text-decoration: none;
-    color: black;
+    color: white;
+    margin-left: 20px;
     padding: 12px;
-    background-color: cyan;
-    border-radius: 50px;
+    background-color: rgb(27, 71, 123);
+    border-radius: 5px;
 }
 .med{
     display: flex;
@@ -124,12 +155,21 @@ body{
     margin: 20px;
 }
 .mid{
-    height: 100vh;
+    height: max-content;
 }
 .topmed img{
     width: 400px;
 }
+.lowmed{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .lowmed a{
+    font-size: 19px;
+    color: blue;
+    font-weight: 300;
     text-decoration: none;
 }
 .everything{
@@ -273,7 +313,8 @@ button{
 }
 .hsec{
     display: flex;
-    background-color: rgb(245,245, 245);
+    background-color: rgb(242, 242, 242);
+    box-shadow: 0px 0px 5px rgb(230, 230, 230);
     height: 10vh;
     gap: 10px;
 }
@@ -282,9 +323,9 @@ button{
 }
 .lsec{
     display: flex;
-    gap: 300px;
+    gap: 250px;
     justify-content: center;
-    height: 40vh;
+    height: 50vh;
     background-color: snow;
 }
 .sleep{
@@ -293,18 +334,193 @@ button{
 .sleep h6{
     color: black;
     font-family: 'Roboto';
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 .sleep p{
     color: black;
     font-family: 'Roboto';
-    line-height: 30px;
+    font-size: 19px;
+    line-height: 40px;
 }
 .copyright{
     height: 10vh;
     padding: 30px 0px 30px 550px;
+    padding-bottom: 50px;
 }
 .copyright p{
     color: gray;
+    font-size: 19px;
+}
+.section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    justify-content: center;
+    height: max-content;
+    padding: 30px;
+    gap: 30px;
+    padding-left: 6vw;
+    background-color: rgb(246, 246, 246);
+}
+.card{
+    display: flex;
+    width: 350px;
+    background-color: white;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 30px;
+    gap: 30px;
+}
+.card h2{
+    font-size: 3vw;
+    color: rgb(0,86,136);
+}
+.card:nth-child(2) h2{
+    color: rgb(0,123,194);
+}
+.card:nth-child(3) h2{
+    color: rgb(36,156,61);
+}
+.card p{
+    font-size: 19px;
+    line-height: 32px;
+    padding-bottom: 30px;
+    border-bottom: 5px solid green;
+}
+.card a{
+    font-size: 19px;
+    text-decoration: none;
+}
+.card img{
+    height: 60px;
+    width: 60px;
+}
+.what-we-do{
+    height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color:rgb(27,71,123);
+}
+.what-we-do_text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+.what-we-do_text h2{
+    font-size: 40px;
+    padding-left: 0;
+    padding-right: 400px;
+}
+.what-we-do_text p, .what-we-do_text a{
+    font-size: 20px;
+    line-height: 34px;
+    color: white;
+    text-decoration: none;
+}
+.what-we-do_text p{
+    padding-right: 60px;
+}
+.what-we-do_text h1{
+    padding-right: 300px;
+    padding-left: 0;
+}
+.what-we-do_text a{
+    padding: 10px;
+    width: max-content;
+    border: 2px solid white;
+}
+.what-we-do img{
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width:412px){
+    .top{
+        padding-left: 0;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .logo h1{
+        display: none;
+    }
+    .nav{
+        padding-top: 0;
+    }
+    .nav p{
+        display: none;
+    }
+    .hero{
+        height: 260px;
+        background-image: none;
+        background-color: rgb(27, 71, 123);
+    }
+    .menu{
+        font-size: 50px;
+    }
+    .herohead h1{
+        font-weight: 700;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .herohead a{
+        background-color: green;
+    }
+    .abovesec{
+        flex-direction: column;
+        padding: 0px 35px;
+    }
+    .what-we-do{
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .what-we-do_text{
+        padding-left: 20px;
+        padding-bottom: 30px;
+    }
+    .what-we-do_text h2{
+        font-size: 30px;
+        padding: 0;
+    }
+    .meds{
+        flex-direction: column;
+    }
+    .topmed img{
+        width: 100%;
+    }
+    .med{
+        width: 340px;
+    }
+    .what-we-do_text h1{
+        padding: 0;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-top: 40px;
+    }
+    .card{
+        width: 100%;
+    }
+    .lsec{
+        height: max-content;
+        display: grid;
+        padding-bottom: 30px;
+        gap: 10px;
+        padding-left: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .copyright{
+        padding: 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
