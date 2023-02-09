@@ -172,7 +172,7 @@ body{
     font-weight: 300;
     text-decoration: none;
 }
-.everything{
+.page-content{
     background-color: white;
     width: 800px;
     margin: 0px 300px;
@@ -180,11 +180,15 @@ body{
     border: 1px solid antiquewhite;
     border-radius: 0.3125rem;
 }
-.zawarldo{
+.page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     background-blend-mode: darken;
 }
-.zawarldo input{
+.page input{
     color: black;
     outline: none;
 }
@@ -192,10 +196,10 @@ button{
     color: black;
 }
 .loginpage{
-    box-shadow: 0px 0px 10px 3px beige;
+    box-shadow: 0px 0px 5px 3px whitesmoke;
     padding:10px 30px;
     display: flex;
-    gap: 600px;
+    gap: 50vw;
 }
 .loginpage h2{
     color: black;
@@ -228,7 +232,7 @@ button{
 .midsec input{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    width: 500px;
+    width: 65%;
     padding: 10px;
 }
 .belowmid p a{
@@ -238,7 +242,7 @@ button{
 .belowmid input{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    width: 500px;
+    width: 65%;
     padding: 10px;
 }
 .belowmid{
@@ -254,12 +258,14 @@ button{
 }
 .pwd{
     display: flex;
-    gap: 340px;
+    width: 100%;
+    gap: 50%;
 }
 button{
     position: relative;
     top: 20px;
-    padding:10px 232px;
+    width: 65%;
+    padding:10px;
     background-color:rgb(51,178,123);
     border: none;
     font-size: 15px;
@@ -267,30 +273,36 @@ button{
     color: white;
     border-radius: 0.3125rem;
 }
+.bottom{
+    width: 100%;
+}
 .bottom p{
     color: rgb(155, 155, 155);
     font-size: 11px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     padding: 2px;
+    margin: 0px auto;
     background-color: rgb(243,243, 243);
     border-radius: 50%;
-    position: absolute;
-    top: 320px;
-    left: 570px;
+    width: max-content;
+    text-align: center;
+    position: relative;
+    top: 50px;
 }
 .bottom hr{
-    width: 798px;
+    max-width: 798px;
     height: 1px;
     position: relative;
     top: 38px;
     color: rgb(243,243, 243);
 }
 .blogin{
-    margin-top: 200px;
-    box-shadow: 0px 0px 2px 3px beige;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
     padding: 10px;
-    background-color: rgb(242, 242, 242);
+    padding-top: 230px;
 }
 .blogin h5{
     color: rgb(188,52,120);
@@ -438,8 +450,41 @@ button{
     width: 100%;
     height: 100%;
 }
+.invisible{
+    opacity: 0;
+}
+@media only screen and (max-width:868px){
+    .page-content{
+        width: 100%;
+        border: none;
+    }
+    .loginpage{
+        box-shadow: none;
+    }
+}
+@media only screen and (max-width:720px){
+    .page input, button{
+        width: 90%;
+    }
+    .page-content{
+        height: 100%;
+        width: 100%;
+    }
+    .loginimgs img{
+        width: 170px;
+    }
+    .blogin{
+        width: 100%;
+        justify-content: center;
+    }
+    .blogin h5{
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
 
-@media only screen and (max-width:412px){
+}
+@media only screen and (max-width:540px){
     .top{
         padding-left: 0;
         justify-content: flex-start;
@@ -455,7 +500,7 @@ button{
         display: none;
     }
     .hero{
-        height: 260px;
+        height: 280px;
         background-image: none;
         background-color: rgb(27, 71, 123);
     }
@@ -522,5 +567,28 @@ button{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .dropdown{
+        display: none;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        height: 100vh;
+        background-color: white;
+        bottom: 0;
+        width: 100%;
+        flex-direction: column;
+    }
+    .dropdown_content{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 40px;
+    }
+    .dropdown_content a{
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
     }
 }
